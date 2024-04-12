@@ -2,6 +2,9 @@
 Changelog for package trac_ik_kinematics_plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.1 (2024-04-12)
+------------------
+
 2.0.0 (2024-03-29)
 ------------------
 * hide parameters header file, as it is implemetation
