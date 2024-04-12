@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>trac_ik_lib</name> 
-  <version>2.0.0</version>
+  <name>trac_ik_lib</name>
+  <version>2.0.1</version>
   <description>
     TRAC-IK is a faster, significantly more reliable drop-in replacement for
     KDL's pseudoinverse Jacobian solver.
@@ -18,17 +18,18 @@
   <license>BSD</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>rclcpp</depend>
 
   <depend>eigen</depend>
+  <depend>geometry_msgs</depend>
   <depend>kdl_parser</depend>
-  <depend>libnlopt-dev</depend>
   <depend>libnlopt-cxx-dev</depend>
+  <depend>libnlopt-dev</depend>
   <depend>pkg-config</depend>
+  <depend>rclcpp</depend>
   <depend>urdf</depend>
 
   <export>
     <build_type>ament_cmake</build_type>
   </export>
-  
+
 </package>
