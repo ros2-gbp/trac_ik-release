@@ -37,7 +37,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <trac_ik/trac_ik.hpp>
 #include <trac_ik/trac_ik_kinematics_plugin.hpp>
 #include <limits>
-#include "trac_ik_kinematics_parameters.hpp"
+#include <trac_ik_kinematics_plugin/trac_ik_kinematics_parameters.hpp>
 
 namespace trac_ik_kinematics_plugin
 {
@@ -347,6 +347,8 @@ bool TRAC_IKKinematicsPlugin::searchPositionIK(const geometry_msgs::msg::Pose &i
     solvetype = TRAC_IK::Manip1;
   else if (solve_type == "Manipulation2")
     solvetype = TRAC_IK::Manip2;
+  else if (solve_type == "Manipulation3")
+      solvetype = TRAC_IK::Manip3;
   else if (solve_type == "Distance")
     solvetype = TRAC_IK::Distance;
   else
