@@ -23,19 +23,16 @@ set(DEPS
   urdf
   kdl_parser
   NLopt
-  )
-
-
+)
 
 add_library(trac_ik SHARED src/kdl_tl.cpp src/nlopt_ik.cpp src/trac_ik.cpp)
 target_link_libraries(trac_ik ${pkg_nlopt_LIBRARIES})
 target_include_directories(trac_ik PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
-  )
+)
 
-ament_target_dependencies( trac_ik  ${DEPS})
-
+ament_target_dependencies(trac_ik ${DEPS})
 
 install(
   DIRECTORY include/
@@ -49,7 +46,6 @@ install(TARGETS trac_ik
   RUNTIME DESTINATION bin
 )
 
-
 ament_export_libraries(
   trac_ik
 )
@@ -59,11 +55,10 @@ ament_export_targets(
 
 ament_export_dependencies(
   ${DEPS}
-  )
+)
 
 ament_export_include_directories(
   include
 )
-
 
 ament_package()
