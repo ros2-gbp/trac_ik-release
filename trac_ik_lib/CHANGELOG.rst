@@ -2,17 +2,10 @@
 Changelog for package trac_ik_lib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.1.1 (2025-07-28)
+2.0.2 (2025-07-28)
 ------------------
 * Add Manipulation3, maximizing smallest singular value (`#46 <https://bitbucket.org/traclabs/trac_ik/pull-requests/46>`_)
 * Contributors: Matthijs van der Burgh
-
-2.1.0 (2025-05-20)
-------------------
-* Switch from ament_target_dependencies to target_link_libraries. (`#43 <https://bitbucket.org/traclabs/trac_ik/pull-requests/43>`_)
-* Fix deprecated header warnings (`#41 <https://bitbucket.org/traclabs/trac_ik/pull-requests/41>`_)
-* Add a constructor TRAC_IK::TRAC_IK that does not require a rclcpp::Node as argument (`#40 <https://bitbucket.org/traclabs/trac_ik/pull-requests/40>`_)
-* Contributors: Kenji Brameld, Roelof
 
 2.0.1 (2024-04-12)
 ------------------
