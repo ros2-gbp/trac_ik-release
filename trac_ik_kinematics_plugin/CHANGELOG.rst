@@ -2,7 +2,7 @@
 Changelog for package trac_ik_kinematics_plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.2.0 (2025-07-28)
+2.1.1 (2025-07-28)
 ------------------
 * Add Manipulation3, maximizing smallest singular value (`#46 <https://bitbucket.org/traclabs/trac_ik/pull-requests/46>`_)
 * Contributors: Matthijs van der Burgh
