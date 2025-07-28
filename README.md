@@ -1,3 +1,29 @@
+## trac_ik (kilted) - 2.1.1-1
+
+The packages in the `trac_ik` repository were released into the `kilted` distro by running `/usr/bin/bloom-release -r kilted trac_ik` on `Mon, 28 Jul 2025 13:26:53 -0000`
+
+These packages were released:
+- `trac_ik`
+- `trac_ik_kinematics_plugin`
+- `trac_ik_lib`
+
+Version of package(s) in repository `trac_ik`:
+
+- upstream repository: https://bitbucket.org/traclabs/trac_ik
+- release repository: https://github.com/ros2-gbp/trac_ik-release.git
+- rosdistro version: `2.1.0-1`
+- old version: `2.1.0-1`
+- new version: `2.1.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## trac_ik (rolling) - 2.2.0-1
 
 The packages in the `trac_ik` repository were released into the `rolling` distro by running `/usr/bin/bloom-release -r rolling trac_ik` on `Mon, 28 Jul 2025 13:24:28 -0000`
