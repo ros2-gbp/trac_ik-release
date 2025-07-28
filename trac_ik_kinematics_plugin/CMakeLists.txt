@@ -24,9 +24,9 @@ set(DEPS
   tf2_kdl
   generate_parameter_library
   trac_ik_lib
-  )
+)
 
-set(TRAC_IK_PLUGIN_LIB trac_ik_kinematics_plugin)
+set(TRAC_IK_PLUGIN_LIB ${PROJECT_NAME})
 set(TRAC_IK_PARAM_LIB trac_ik_kinematics_parameters)
 
 generate_parameter_library(${TRAC_IK_PARAM_LIB} src/trac_ik_kinematics_parameters.yaml)
@@ -37,7 +37,7 @@ target_link_libraries(${TRAC_IK_PLUGIN_LIB} ${TRAC_IK_PARAM_LIB})
 target_include_directories(${TRAC_IK_PLUGIN_LIB} PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
-  )
+)
 ament_target_dependencies(${TRAC_IK_PLUGIN_LIB} ${DEPS})
 
 install(
@@ -59,8 +59,8 @@ target_compile_definitions(${TRAC_IK_PLUGIN_LIB} PRIVATE "TRAC_IK_KINEMATICS_PLU
 pluginlib_export_plugin_description_file(moveit_core trac_ik_kinematics_description.xml)
 
 ament_export_libraries(${TRAC_IK_PLUGIN_LIB})
-ament_export_targets( export_${PROJECT_NAME} )
-ament_export_dependencies( ${DEPS} )
+ament_export_targets(export_${PROJECT_NAME} HAS_LIBRARY_TARGET)
+ament_export_dependencies(${DEPS})
 ament_export_include_directories(include)
 
 ament_package()
