@@ -1,0 +1,12 @@
+Source: ros-lyrical-trac-ik-kinematics-plugin
+Section: misc
+Priority: optional
+Maintainer: TRACLabs Robotics <robotics@traclabs.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lyrical-ament-cmake, ros-lyrical-class-loader, ros-lyrical-generate-parameter-library, ros-lyrical-moveit-core, ros-lyrical-pluginlib, ros-lyrical-rclcpp, ros-lyrical-tf2-kdl, ros-lyrical-trac-ik-lib, ros-lyrical-urdf, ros-lyrical-ros-workspace
+Homepage: https://index.ros.org/p/trac_ik_kinematics_plugin/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-trac-ik-kinematics-plugin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-class-loader, ros-lyrical-generate-parameter-library, ros-lyrical-moveit-core, ros-lyrical-pluginlib, ros-lyrical-rclcpp, ros-lyrical-tf2-kdl, ros-lyrical-trac-ik-lib, ros-lyrical-urdf, ros-lyrical-ros-workspace
+Description: A MoveIt! Kinematics plugin using TRAC-IK
