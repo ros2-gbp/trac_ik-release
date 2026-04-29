@@ -78,5 +78,4 @@ tracks:
     ros_distro: rolling
     vcs_type: git
     vcs_uri: https://bitbucket.org/traclabs/trac_ik
-    version: 2.2.0
-    version_saved: :{auto}
+    version: :{auto}
